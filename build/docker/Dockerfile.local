@@ -1,0 +1,32 @@
+FROM alpine:latest
+
+ENV TZ="Asia/Shanghai" \
+  LANG="en_US.utf8" \
+  LC_ALL="en_US.utf8"
+
+WORKDIR /app
+
+VOLUME ["/app"]
+
+ARG APP_NAME=starwiz_ai_service
+
+COPY  build/bin/${APP_NAME} /app/
+COPY  assets/ /app/assets/
+COPY  storage/ /app/storage/
+COPY  .env /app/.env
+
+# RUN adduser -u 10001 -D appuser
+
+RUN set -ex \
+  && adduser -u 10001 -D appuser \
+  && chown -R appuser /app \
+  && apk add --update curl \
+  && rm -rf /var/cache/apk/*
+
+USER appuser
+
+EXPOSE 8088
+
+HEALTHCHECK CMD curl -fs http://localhost:8088/api/v1/ai/health || exit 1
+
+ENTRYPOINT ["/app/starwiz_ai_service"]
