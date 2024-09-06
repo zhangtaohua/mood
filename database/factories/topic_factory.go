@@ -1,7 +1,7 @@
 package factories
 
 import (
-	"github.com/zhangtaohua/gohub/app/models/topic"
+	"mood/app/models/topic"
 
 	"github.com/bxcodec/faker/v3"
 )

@@ -1,11 +1,11 @@
 package v1
 
 import (
-	"github.com/zhangtaohua/gohub/app/models/topic"
-	"github.com/zhangtaohua/gohub/app/policies"
-	"github.com/zhangtaohua/gohub/app/requests"
-	"github.com/zhangtaohua/gohub/pkg/auth"
-	"github.com/zhangtaohua/gohub/pkg/response"
+	"mood/app/models/topic"
+	"mood/app/policies"
+	"mood/app/requests"
+	"mood/pkg/auth"
+	"mood/pkg/response"
 
 	"github.com/gin-gonic/gin"
 )

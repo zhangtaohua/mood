@@ -3,8 +3,8 @@ package migrations
 import (
 	"database/sql"
 
-	"github.com/zhangtaohua/gohub/app/models"
-	"github.com/zhangtaohua/gohub/pkg/migrate"
+	"mood/app/models"
+	"mood/pkg/migrate"
 
 	"gorm.io/gorm"
 )

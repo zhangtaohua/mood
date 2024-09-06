@@ -2,8 +2,8 @@
 package policies
 
 import (
-	"github.com/zhangtaohua/gohub/app/models/topic"
-	"github.com/zhangtaohua/gohub/pkg/auth"
+	"mood/app/models/topic"
+	"mood/pkg/auth"
 
 	"github.com/gin-gonic/gin"
 )

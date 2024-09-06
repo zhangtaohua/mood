@@ -1,9 +1,9 @@
 package topic
 
 import (
-	"github.com/zhangtaohua/gohub/pkg/app"
-	"github.com/zhangtaohua/gohub/pkg/database"
-	"github.com/zhangtaohua/gohub/pkg/paginator"
+	"mood/pkg/app"
+	"mood/pkg/database"
+	"mood/pkg/paginator"
 
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm/clause"

@@ -2,10 +2,10 @@
 package topic
 
 import (
-	"github.com/zhangtaohua/gohub/app/models"
-	"github.com/zhangtaohua/gohub/app/models/category"
-	"github.com/zhangtaohua/gohub/app/models/user"
-	"github.com/zhangtaohua/gohub/pkg/database"
+	"mood/app/models"
+	"mood/app/models/category"
+	"mood/app/models/user"
+	"mood/pkg/database"
 )
 
 type Topic struct {
